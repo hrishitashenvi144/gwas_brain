@@ -357,7 +357,7 @@ if st.session_state.get("last_disease") != selected_disease:
     st.session_state.selected_region_name = default_region_for_disease(region_df, selected_disease)
     st.session_state["last_disease"] = selected_disease
 
-st.markdown('<div class="app-title">Brain GWAS Enrichment</div>', unsafe_allow_html=True)
+st.markdown('<div class="app-title">Neuromap-Brain GWAS Enrichment</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Interactive brain-wide enrichment analysis of neurodegenerative disease-associated genes.</div>', unsafe_allow_html=True)
 
 brain_col, side_col = st.columns([2.15, 0.85])
