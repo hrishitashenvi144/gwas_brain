@@ -38,9 +38,10 @@ st.markdown(
         font-weight: 700;
         color: #F5F8F5;
         line-height: 1.25;
-        margin: 80px 0 0.35rem 0;
+        margin: 0 0 0.35rem 0;
         position:relative;
-        top:0;
+        top:0px;
+        # margin-bottom:60px;
         padding-top: 0.5rem;
         max-width: min(100%, 1100px);
         display: block;
@@ -371,7 +372,7 @@ if st.session_state.get("last_disease") != selected_disease:
     st.session_state["last_disease"] = selected_disease
 
 st.markdown(
-    '<div style="height: 90px;"></div>'
+    '<div style="height: 0px;"></div>'
     '<div class="app-title">Neuromap-Brain GWAS Enrichment</div>',
     unsafe_allow_html=True,
 )
