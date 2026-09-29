@@ -20,21 +20,30 @@ st.markdown(
     .stApp {
         background: #050807;
         color: #F5F8F5;
+        overflow: visible;
     }
 
     .block-container {
-        padding-top: 1.25rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-top: 0.9rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
         max-width: 1500px;
+        overflow: visible;
     }
 
     .app-title {
-        font-size: 2rem;
-        letter-spacing: -0.04em;
-        font-weight: 600;
+        font-size: clamp(2.2rem, 2.7vw, 4rem);
+        letter-spacing: -0.055em;
+        font-weight: 700;
         color: #F5F8F5;
-        margin-bottom: 0.15rem;
+        line-height: 0.98;
+        margin: 0 0 0.35rem 0;
+        max-width: min(100%, 1100px);
+        display: block;
+        white-space: normal;
+        overflow: visible;
+        visibility: visible !important;
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     }
 
     .subtitle {
@@ -357,8 +366,14 @@ if st.session_state.get("last_disease") != selected_disease:
     st.session_state.selected_region_name = default_region_for_disease(region_df, selected_disease)
     st.session_state["last_disease"] = selected_disease
 
-st.markdown('<div class="app-title">Neuromap-Brain GWAS Enrichment</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">Interactive brain-wide enrichment analysis of neurodegenerative disease-associated genes.</div>', unsafe_allow_html=True)
+st.markdown(
+    '<div class="app-title">Neuromap-Brain GWAS Enrichment</div>',
+    unsafe_allow_html=True,
+)
+st.markdown(
+    '<div class="subtitle">Interactive brain-wide enrichment analysis of neurodegenerative disease-associated genes.</div>',
+    unsafe_allow_html=True,
+)
 
 brain_col, side_col = st.columns([2.15, 0.85])
 
