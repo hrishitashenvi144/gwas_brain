@@ -23,8 +23,9 @@ st.markdown(
         overflow: visible;
     }
 
-    .block-container {
-        padding-top: 5rem !important;
+    .block-container ,
+[data-testid="stMainBlockContainer"] {
+        padding-top: 7rem !important;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         max-width: 1500px;
@@ -36,9 +37,9 @@ st.markdown(
         letter-spacing: -0.055em;
         font-weight: 700;
         color: #F5F8F5;
-        line-height: 1.1;
+        line-height: 1.25;
         margin: 0 0 0.35rem 0;
-        padding-top: 0.25rem;
+        padding-top: 0.5rem;
         max-width: min(100%, 1100px);
         display: block;
         white-space: normal;
