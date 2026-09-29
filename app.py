@@ -36,8 +36,9 @@ st.markdown(
         letter-spacing: -0.055em;
         font-weight: 700;
         color: #F5F8F5;
-        line-height: 0.98;
+        line-height: 1.1;
         margin: 0 0 0.35rem 0;
+        padding-top: 0.25rem;
         max-width: min(100%, 1100px);
         display: block;
         white-space: normal;
