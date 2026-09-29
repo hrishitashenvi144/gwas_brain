@@ -8,7 +8,7 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="Brain GWAS Enrichment",
+    page_title="NeuroAtlas",
     page_icon="🧠",
     layout="wide",
 )
