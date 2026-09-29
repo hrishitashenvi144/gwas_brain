@@ -42,7 +42,9 @@ st.markdown(
         max-width: min(100%, 1100px);
         display: block;
         white-space: normal;
-        overflow: visible;
+        overflow: visible !important;
+clip-path: none !important;
+transform: none !important;
         visibility: visible !important;
         font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     }
