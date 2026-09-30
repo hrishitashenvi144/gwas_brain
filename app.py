@@ -527,7 +527,7 @@ with side_col:
             "->\n"
             "Allen Human Brain Atlas expression data\n"
             "->\n"
-            "Probe ? gene aggregation\n"
+            "Probe -> gene aggregation\n"
             "->\n"
             "Gene-wise regional normalization\n"
             "->\n"
