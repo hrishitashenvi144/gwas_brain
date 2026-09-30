@@ -8,7 +8,7 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="NeuroAtlas",
+    page_title="Neuromap",
     page_icon="🧠",
     layout="wide",
 )
@@ -373,7 +373,7 @@ if st.session_state.get("last_disease") != selected_disease:
 
 st.markdown(
     '<div style="height: 0px;"></div>'
-    '<div class="app-title">NeuroAtlas-Brain GWAS Enrichment</div>',
+    '<div class="app-title">Neuromap-Brain GWAS Enrichment</div>',
     unsafe_allow_html=True,
 )
 st.markdown(
