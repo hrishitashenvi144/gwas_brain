@@ -524,19 +524,19 @@ with side_col:
     with st.expander("How the analysis works"):
         st.markdown(
             "Disease-associated genes\n"
-            "?\n"
+            "->\n"
             "Allen Human Brain Atlas expression data\n"
-            "?\n"
+            "->\n"
             "Probe ? gene aggregation\n"
-            "?\n"
+            "->\n"
             "Gene-wise regional normalization\n"
-            "?\n"
+            "->\n"
             "Disease regional score\n"
-            "?\n"
+            "->\n"
             "Expression-matched permutation test\n"
-            "?\n"
+            "->\n"
             "FDR correction\n"
-            "?\n"
+            "->\n"
             "Brain-region visualization"
         )
 
